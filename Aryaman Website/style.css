@@ -1,0 +1,86 @@
+/* Set up a calm gradient background with smooth transition */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #89CFF0, #4B9CD3); /* Soft blue to teal */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s ease-in-out; /* Smooth transition for gradient */
+  }
+  
+  /* Main container for the content */
+  .container {
+    text-align: center;
+    padding: 40px 60px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px; /* Limit max width for a more compact feel */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Title and heading style */
+  h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  /* Paragraph style */
+  p {
+    font-size: 1.2rem;
+    color: #d0e6f0;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  
+  /* Button container for aligned buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for each sound button with chill animation */
+  .sound-button {
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #4B9CD3; /* Soft blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  
+  /* Hover effect for the buttons */
+  .sound-button:hover {
+    background-color: #396B8D; /* Darker teal on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Button lifts up */
+  }
+  
+  /* Active button effect when clicked */
+  .sound-button:active {
+    background-color: #2d5774; /* Even darker on active */
+    transform: translateY(2px); /* Slight press-down effect */
+  }
+  
+  /* Optional: Make container shadow more pronounced on hover */
+  .container:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  }
+  
